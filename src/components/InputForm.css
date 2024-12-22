@@ -1,0 +1,70 @@
+h3 {
+    margin: 10px auto;
+}
+
+input {
+    border-width: 0;
+    display: flex;
+    font-size: 20px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+    background-color: rgb(255, 196, 196);
+    max-width: 400px;
+    accent-color: rgb(255, 186, 186);
+}
+
+textarea {
+    border-width: 0;
+    display: flex;
+    font-size: 20px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+    background-color: rgb(255, 196, 196);
+    accent-color: rgb(255, 186, 186);
+    resize: none;
+    min-height: 60px;
+    max-width: 400px;
+}
+
+button {
+    border-width: 0;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(255, 196, 196);
+    margin: 10px auto;
+}
+
+button:hover {
+    background-color: rgb(255, 167, 167);
+}
+
+button:active {
+    background-color: rgb(255, 157, 157);
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+}
+
+.avatar-change {
+    position: absolute;
+}
+
+img {
+    width: 200px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+img:hover {
+    opacity: 50%;
+}
+
+img:active {
+    opacity: 25%;
+}

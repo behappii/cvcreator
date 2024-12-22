@@ -1,6 +1,7 @@
-import { useState } from "react"
+import { useState } from "react";
+import "./InputForm.css"
 
-export default function InputValues() {
+export default function InputForm() {
     const [form, setForm] = useState({
         nickname: "",
         firstname: "",
@@ -20,17 +21,30 @@ export default function InputValues() {
         }));
     };
 
+    const HandleMouseEnter = () => {
+        console.log("hello")
+            {
+                <p className="avatar-change">hello</p>
+            }
+    }
+
     console.log(form);
 
     return (
-        <div>
-            <input type="text" placeholder="Nickname" name="nickname" onChange={HandleChangeInput}/>
+        <div className="inputform">
+            <h3>Insert your data</h3>
+            <input placeholder="Nickname" name="nickname" onChange={HandleChangeInput}/>
             <input type="text" placeholder="First name" name="firstname" onChange={HandleChangeInput}/>
             <input type="text" placeholder="Last name" name="lastname" onChange={HandleChangeInput}/>
             <input type="number" placeholder="Age" name="age" onChange={HandleChangeInput}/>
             <input type="text" placeholder="Email" name="email" onChange={HandleChangeInput}/>
-            <input type="text" placeholder="Description" name="description" onChange={HandleChangeInput}/>
-
+            <textarea placeholder="Description" name="description" onChange={HandleChangeInput}/>
+            <button onClick={() => {}}>Add workplace</button>
+            <h3>Your photo</h3>
+            <div className="avatar">
+                <img src="../pics/avatar.jpg" alt="avatar" onMouseEnter={() => {HandleMouseEnter()}}/>
+            </div>
+            <button style={{width: "100%"}}>Generate PDF</button>
         </div>
     );
 }

@@ -1,18 +1,18 @@
 import './App.css'
 import Footer from './components/Footer'
 import Header from './components/Header'
-import InputValues from './components/InputValues'
+import InputForm from './components/InputForm'
 
 function App() {
 
   return (
-    <>
+    <div className='wrapper'>
+      <Header/>
       <div className='container'>
-        <Header/>
-        <InputValues/>
-        <Footer/>
+        <InputForm/>
       </div>
-    </>
+      <Footer/>
+    </div>
   )
 }
 
