@@ -1,7 +1,9 @@
 import { useState } from "react";
 import "./InputForm.css"
+import UploadAndDisplayImage from "./FileUpload";
 
 export default function InputForm() {
+
     const [form, setForm] = useState({
         nickname: "",
         firstname: "",
@@ -21,13 +23,6 @@ export default function InputForm() {
         }));
     };
 
-    const HandleMouseEnter = () => {
-        console.log("hello")
-            {
-                <p className="avatar-change">hello</p>
-            }
-    }
-
     console.log(form);
 
     return (
@@ -39,12 +34,12 @@ export default function InputForm() {
             <input type="number" placeholder="Age" name="age" onChange={HandleChangeInput}/>
             <input type="text" placeholder="Email" name="email" onChange={HandleChangeInput}/>
             <textarea placeholder="Description" name="description" onChange={HandleChangeInput}/>
-            <button onClick={() => {}}>Add workplace</button>
-            <h3>Your photo</h3>
-            <div className="avatar">
-                <img src="../pics/avatar.jpg" alt="avatar" onMouseEnter={() => {HandleMouseEnter()}}/>
+            <button onClick={() => {}}>ADD INFO</button>
+            <div style={{textAlign: 'center'}}>
+                <h3>Your photo</h3>
+                <UploadAndDisplayImage/>                
             </div>
-            <button style={{width: "100%"}}>Generate PDF</button>
+            <button style={{width: "100%"}}>GENERATE PDF</button>
         </div>
     );
 }

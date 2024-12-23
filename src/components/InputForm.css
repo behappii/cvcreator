@@ -1,17 +1,14 @@
-h3 {
-    margin: 10px auto;
-}
-
 input {
     border-width: 0;
     display: flex;
     font-size: 20px;
     width: 100%;
     margin: 10px 0;
-    padding: 10px 0;
+    padding: 10px 10px;
     background-color: rgb(255, 196, 196);
-    max-width: 400px;
+    max-width: 350px;
     accent-color: rgb(255, 186, 186);
+    border-radius: 10px;
 }
 
 textarea {
@@ -19,13 +16,13 @@ textarea {
     display: flex;
     font-size: 20px;
     width: 100%;
-    margin: 10px 0;
-    padding: 10px 0;
+    padding: 10px 10px;
     background-color: rgb(255, 196, 196);
     accent-color: rgb(255, 186, 186);
     resize: none;
     min-height: 60px;
-    max-width: 400px;
+    max-width: 350px;
+    border-radius: 10px;
 }
 
 button {
@@ -36,6 +33,7 @@ button {
     border-radius: 10px;
     background-color: rgb(255, 196, 196);
     margin: 10px auto;
+    font-weight: 500;
 }
 
 button:hover {
@@ -46,17 +44,11 @@ button:active {
     background-color: rgb(255, 157, 157);
 }
 
-.avatar {
-    display: flex;
-    justify-content: center;
-}
-
-.avatar-change {
-    position: absolute;
-}
-
 img {
+    margin: 10px 0;
     width: 200px;
+    height: 200px;
+    object-fit: cover;
     border-radius: 100px;
     cursor: pointer;
 }
@@ -67,4 +59,8 @@ img:hover {
 
 img:active {
     opacity: 25%;
+}
+
+.img-upload {
+    display: none;
 }
